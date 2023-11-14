@@ -1,0 +1,28 @@
+.description {}
+
+.container {}
+
+.description__title {
+	font-weight: 400;
+	font-size: 22px;
+	color: #7a736b;
+}
+
+.description__span {
+	color: #ff8f00;
+	text-shadow: 1px 1px 2px #000, 0 0 1em #ff8f00;
+	;
+}
+
+.description__container {
+	max-width: 900px;
+}
+
+.description__text {
+	margin: 10px 0 0;
+	padding: 0;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 21px;
+	color: #ffffffa1;
+}

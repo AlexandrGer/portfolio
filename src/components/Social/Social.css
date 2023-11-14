@@ -1,0 +1,37 @@
+.social {
+	position: fixed;
+	bottom: 0;
+	left: 20px;
+}
+
+.social__container {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.social__container::after {
+	height: 60px;
+	background: #fff;
+	content: "";
+	width: 1px;
+	margin: 0 auto;
+
+}
+
+.social__item {
+	transition: transform 0.5s ease-in-out;
+}
+
+.social__link {}
+
+.social__icon {
+	width: 30px;
+}
+
+.social__item:hover {
+	transform: rotate(360deg);
+}
