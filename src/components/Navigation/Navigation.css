@@ -1,15 +1,18 @@
-.navigation {}
+.navigation {
+	display: flex;
+	justify-content: flex-end;
+	width: 80%;
+}
 
 .navigation__items {
 	display: flex;
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	gap: 30px;
 }
 
-.navigation__item {
-	margin: 10px 30px 0 0;
-}
+.navigation__item {}
 
 .navigation__link {
 	text-decoration: none;
@@ -21,4 +24,12 @@
 
 .navigation__link_active {
 	color: #ff8f00;
+	text-shadow: 1px 1px 2px #000, 0 0 1em #ff8f00;
+}
+
+.navigation__link_inactive {}
+
+.navigation__link_inactive:hover {
+	color: #b98d54;
+	text-shadow: 1px 1px 2px #000, 0 0 1em #a2845d;
 }

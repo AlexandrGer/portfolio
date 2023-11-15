@@ -1,17 +1,19 @@
 .description {}
 
-.container {}
+.description__wrapper {
+	max-width: 760px;
+}
 
 .description__title {
 	font-weight: 400;
 	font-size: 22px;
 	color: #7a736b;
+	margin: 0;
 }
 
 .description__span {
 	color: #ff8f00;
 	text-shadow: 1px 1px 2px #000, 0 0 1em #ff8f00;
-	;
 }
 
 .description__container {
@@ -25,4 +27,8 @@
 	font-size: 17px;
 	line-height: 21px;
 	color: #ffffffa1;
+}
+
+.description__text:first-child {
+	margin: 20px 0 0;
 }

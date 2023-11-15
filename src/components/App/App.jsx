@@ -10,8 +10,8 @@ function App() {
 			<Header />
 			<div className='page__container'>
 				<Main />
+				<Social />
 			</div>
-			<Social />
 		</div>
 	);
 }
