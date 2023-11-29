@@ -1,0 +1,92 @@
+.project:hover .project__wrapper {
+	background-color: #000000cf;
+	opacity: 1;
+}
+
+.project {
+	height: 350px;
+	position: relative;
+}
+
+.project__image {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+
+.project__wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	z-index: 1;
+	transition: opasity 0.3s ease;
+	transition: background-color 0.3s ease;
+}
+
+.project__link {
+	width: 60px;
+	position: absolute;
+	top: 10px;
+	right: 35px;
+	transition: transform 0.3s ease;
+}
+
+.project__link:hover {
+	transform: scale(1.2);
+}
+
+.project__link-img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.project__title {
+	font-weight: 400;
+	font-size: 30px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.project__title:hover {
+	background-image: linear-gradient(90deg, #ff8f00 0%, #989898 80%);
+	background-clip: text;
+	-webkit-buackgrond-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.project__description {
+	margin: 20px 0 0;
+	font-weight: 400;
+	font-size: 18px;
+	max-width: 400px;
+}
+
+.project__skills {
+	list-style: none;
+	display: flex;
+	gap: 10px;
+	margin: 20px 20px 0;
+	padding: 0;
+	flex-wrap: wrap;
+	overflow: hidden;
+}
+
+.project__skill {}
+
+.project__skill-img {
+	width: 50px;
+	filter: grayscale(100%);
+}
+
+.project__skill-img:hover {
+	filter: grayscale(0);
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import './Navigation.css';
 import { NavLink } from "react-router-dom";
+import resume from '../../images/Резюме.pdf';
 
 export const Navigation = () => {
 	return (
@@ -22,9 +23,10 @@ export const Navigation = () => {
 					</NavLink>
 				</li>
 				<li className="navigation__item">
-					<NavLink to='/resume' className={({ isActive }) => `${isActive ? "navigation__link navigation__link_active" : "navigation__link navigation__link_inactive"}`}>
+					<a href={resume} className="navigation__link navigation__link_inactive" target="_blank">Резюме</a>
+					{/* <NavLink to='/resume' className={({ isActive }) => `${isActive ? "navigation__link navigation__link_active" : "navigation__link navigation__link_inactive"}`}>
 						Резюме
-					</NavLink>
+					</NavLink> */}
 				</li>
 			</ul>
 		</nav>

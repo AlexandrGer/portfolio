@@ -1,0 +1,19 @@
+.projects {}
+
+.projects__container {
+	box-sizing: border-box;
+	padding: 0 50px;
+}
+
+.projects__title {}
+
+.projects__subtitle {}
+
+.projects__items {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(auto, 1fr));
+	gap: 50px;
+}
