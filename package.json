@@ -1,6 +1,6 @@
 {
+	"homepage": "https://alexandrger.github.io/portfolio",
 	"name": "portfolio",
-	"homepage": "porfolio",
 	"version": "0.1.0",
 	"private": false,
 	"dependencies": {
