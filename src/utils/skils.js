@@ -1,58 +1,96 @@
-import html from '../images/html5.svg';
-import css from '../images/css3.svg';
-import express from '../images/express.svg';
-import figma from '../images/figma.svg';
-import git from '../images/git.svg';
-import javascript from '../images/javascript.svg';
-import mongo from '../images/mongo.png';
-import node from '../images/nodejs.svg';
-import photoshop from '../images/photoshop.svg';
-import react from '../images/react.svg';
-import webpack from '../images/webpack.svg';
+import HTML from "../images/skills/HTML.svg";
+import CSS from "../images/skills/CSS.svg";
+import JavaScript from "../images/skills/JavaScript.svg";
+import React from "../images/skills/React.svg";
 
-export const skillsList = [
-	{
-		name: 'HTML5',
-		icon: html,
-	},
-	{
-		name: 'CSS3',
-		icon: css,
-	},
-	{
-		name: 'JavaScript',
-		icon: javascript,
-	},
-	{
-		name: 'Webpack',
-		icon: webpack,
-	},
-	{
-		name: 'React.JS',
-		icon: react,
-	},
-	{
-		name: 'Node.JS',
-		icon: node,
-	},
-	{
-		name: 'Express.JS',
-		icon: express,
-	},
-	{
-		name: 'GitHub',
-		icon: git,
-	},
-	{
-		name: 'Figma',
-		icon: figma,
-	},
-	{
-		name: 'Photoshop',
-		icon: photoshop,
-	},
-	{
-		name: 'MongoDB',
-		icon: mongo,
-	},
-]
+import TypeScript from "../images/skills/TypeScript.svg";
+import NextJS from "../images/skills/Next.js.svg";
+import Redux from "../images/skills/Redux.svg";
+
+import webpack from "../images/skills/webpack.svg";
+import NodeJS from "../images/skills/Node.js.svg";
+import MongoDB from "../images/skills/MongoDB.png";
+import Express from "../images/skills/Express.svg";
+
+import Git from "../images/skills/Git.svg";
+import Figma from "../images/skills/Figma.svg";
+import Photoshop from "../images/skills/Photoshop.svg";
+import Postman from "../images/skills/Postman.png";
+
+// Технологии которые я хорошо знаю
+export const hardSkills = [
+  {
+    name: "HTML5",
+    icon: HTML,
+  },
+  {
+    name: "CSS3",
+    icon: CSS,
+  },
+  {
+    name: "JavaScript",
+    icon: JavaScript,
+  },
+  {
+    name: "React.JS",
+    icon: React,
+  },
+];
+
+// Технологии с которыми я сейчас работаю и постепенно изучаю
+export const middleSkills = [
+  {
+    name: "TypeScript",
+    icon: TypeScript,
+  },
+  {
+    name: "Next.JS",
+    icon: NextJS,
+  },
+  {
+    name: "Redux Toolkit",
+    icon: Redux,
+  },
+];
+
+// Общие навыки
+export const generalSkills = [
+  {
+    name: "GitHub",
+    icon: Git,
+  },
+  {
+    name: "Figma",
+    icon: Figma,
+  },
+  {
+    name: "Photoshop",
+    icon: Photoshop,
+  },
+  {
+    name: "Postman",
+    icon: Postman,
+  },
+];
+
+// Технологии с которыми доводилось работать
+export const juniorSkills = [
+  {
+    name: "Webpack",
+    icon: webpack,
+  },
+
+  {
+    name: "Node.JS",
+    icon: NodeJS,
+  },
+  {
+    name: "Express",
+    icon: Express,
+  },
+
+  {
+    name: "MongoDB",
+    icon: MongoDB,
+  },
+];

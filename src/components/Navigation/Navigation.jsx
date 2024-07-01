@@ -1,34 +1,58 @@
 import React from "react";
-import './Navigation.css';
+import "./Navigation.css";
 import { NavLink } from "react-router-dom";
-import resume from '../../images/Резюме.pdf';
+import resume from "../../images/Резюме.pdf";
 
 export const Navigation = () => {
-	return (
-		<nav className="navigation">
-			<ul className="navigation__items">
-				<li className="navigation__item">
-					<NavLink to='/' className={({ isActive }) => `${isActive ? "navigation__link navigation__link_active" : "navigation__link navigation__link_inactive"}`}>
-						Главная
-					</NavLink>
-				</li>
-				{/* <li className="navigation__item">
+  return (
+    <nav className="navigation">
+      <ul className="navigation__items">
+        <li className="navigation__item">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `${
+                isActive
+                  ? "navigation__link navigation__link_active"
+                  : "navigation__link navigation__link_inactive"
+              }`
+            }
+          >
+            Главная
+          </NavLink>
+        </li>
+        {/* <li className="navigation__item">
 					<NavLink to='/skills' className={({ isActive }) => `${isActive ? "navigation__link navigation__link_active" : "navigation__link navigation__link_inactive"}`}>
 						Навыки
 					</NavLink>
 				</li> */}
-				<li className="navigation__item">
-					<NavLink to='/projects' className={({ isActive }) => `${isActive ? "navigation__link navigation__link_active" : "navigation__link navigation__link_inactive"}`}>
-						Проекты
-					</NavLink>
-				</li>
-				<li className="navigation__item">
-					<a href={resume} className="navigation__link navigation__link_inactive" target="_blank">Резюме</a>
-					{/* <NavLink to='/resume' className={({ isActive }) => `${isActive ? "navigation__link navigation__link_active" : "navigation__link navigation__link_inactive"}`}>
+        <li className="navigation__item">
+          <NavLink
+            to="/projects"
+            className={({ isActive }) =>
+              `${
+                isActive
+                  ? "navigation__link navigation__link_active"
+                  : "navigation__link navigation__link_inactive"
+              }`
+            }
+          >
+            Проекты
+          </NavLink>
+        </li>
+        <li className="navigation__item">
+          <a
+            href={resume}
+            className="navigation__link navigation__link_inactive"
+            target="blank"
+          >
+            Резюме
+          </a>
+          {/* <NavLink to='/resume' className={({ isActive }) => `${isActive ? "navigation__link navigation__link_active" : "navigation__link navigation__link_inactive"}`}>
 						Резюме
 					</NavLink> */}
-				</li>
-			</ul>
-		</nav>
-	)
-}
+        </li>
+      </ul>
+    </nav>
+  );
+};
